@@ -10,6 +10,8 @@
 * [การใช้งาน Pandas และการเตรียมข้อมูล (Data Preparation)](03_Pandas.md)
 * [การแสดงผลข้อมูล - Data Visualization](04_DataVisualization.md)
 * [ตัวอย่างการเตรียมข้อมูล (Students)](05_DataPrepExample.md)
+* [ตัวอย่างการตรวจจับ Outliers](05_Outlier.md)
+* [ตัวอย่างการทำ Data Normalization](05_Normalization.md)
 
 **Classification**
 * [การจำแนกข้อมูล (Classification) โดยใช้ Scikit-learn (Part 1 - Decision Tree)](06_Classification_DT.md)
