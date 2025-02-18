@@ -13,6 +13,10 @@
 * [ตัวอย่างการตรวจจับ Outliers](05_Outlier.md)
 * [ตัวอย่างการทำ Data Normalization](05_Normalization.md)
 
+**Recommendation System**
+* [ตัวอย่าง Collaborative Filtering using Surprise Library](12_CF_Surprise.md)
+
+
 **Classification**
 * [การจำแนกข้อมูล (Classification) โดยใช้ Scikit-learn (Part 1 - Decision Tree)](06_Classification_DT.md)
 * [การจำแนกข้อมูล (Classification) โดยใช้ Scikit-learn (Part 2 - Naïve Bayes)](07_Classifiaction_NB.md)
