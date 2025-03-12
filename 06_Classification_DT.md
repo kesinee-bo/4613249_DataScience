@@ -152,7 +152,10 @@ df['class'] = y_test
 df['predited_class'] =clf.predict(X_test)
 
 # Map target values to target names
-target_names = dict(enumerate(iris.target_names))
+target_names = {
+  "M": "Malignant",
+  "B": "Benign"
+}
 df['class'] = df['class'].map(target_names)
 df['predited_class'] = df['predited_class'].map(target_names)
 
