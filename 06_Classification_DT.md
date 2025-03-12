@@ -438,7 +438,10 @@ df_cancer_predict['predited_class'] =clf_cancer.predict(X_test)
 df_cancer_predict['class'] = y_test
 
 # Map target values to target names
-target_names = dict(enumerate(['Benign','Malignant']))
+target_names = {
+  "M": "Malignant",
+  "B": "Benign"
+}
 df_cancer_predict['class'] = df_cancer_predict['class'].map(target_names)
 df_cancer_predict['predited_class'] = df_cancer_predict['predited_class'].map(target_names)
 
