@@ -463,6 +463,8 @@ print(metrics.classification_report(y_test, clf_cancer.predict(X_test)))
 metrics.confusion_matrix(y_test, clf_cancer.predict(X_test))
 ```
 
+![alt text](images/06_16_Cancer_ConfusionMatrix.png)
+
 แสดงภาพตาราง Confustion Matrix
 ```python
 cm = metrics.confusion_matrix(y_test, clf_cancer.predict(X_test))
@@ -473,7 +475,6 @@ plt.show()
 ```
 
 
-![alt text](images/06_16_Cancer_ConfusionMatrix.png)
 
 แสดงค่าความถูกต้อง
 
