@@ -381,12 +381,6 @@ df_cancer.drop(["id"],axis=1,inplace=True)
 df_cancer.columns
 ```
 
-สิ่งที่เราสนใจคือการทำนายการเกิดมะเร็ง ดังนั้น class หรือ target ของเราคือ dianosis ซึ่งจะแสดงค่าเป็น 'M' และ 'B' ซึ่งย่อมาจาก 'Malignant' และ 'Benign' ตามลำดับ ดังนั้นเราจะทำการแปลงค่าให้เป็น 1 และ 0 ดังโค้ดด้านล่าง
-
-```python
-df_cancer.diagnosis=[1 if each == "M" else 0 for each in df_cancer.diagnosis]
-df_cancer.head()
-```
 
 จะได้ข้อมูลหลังจากแปลงค่าแล้วดังนี้
 
@@ -468,6 +462,16 @@ print(metrics.classification_report(y_test, clf_cancer.predict(X_test)))
 ```python
 metrics.confusion_matrix(y_test, clf_cancer.predict(X_test))
 ```
+
+แสดงภาพตาราง Confustion Matrix
+```python
+cm = metrics.confusion_matrix(y_test, clf_cancer.predict(X_test))
+disp = metrics.ConfusionMatrixDisplay(confusion_matrix=cm,
+                              display_labels=clf_cancer.classes_)
+disp.plot()
+plt.show()
+```
+
 
 ![alt text](images/06_16_Cancer_ConfusionMatrix.png)
 
